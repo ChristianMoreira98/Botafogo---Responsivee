@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /*Garante o preenchimento/padding seja incluído no cálculo da largura, evitando que o conteúdo da largura, evitando que o conteúdo ultrapasse a tela*/
+}
+
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+
+header {
+    padding: min(5vh, 4rem);
+    /*Ajustando o padding para ser mais flexível*/
+    background-color: black;
+    width: 100%;
+    /*Colocamos a largura para 100% do espaço disponível*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    /*Aqui começamos o posicionamento do header*/
+    position: sticky;
+    /*Posicionamento do header usando o stick, sendo um posicionamento fixo, porém distindo do Fixed*/
+    top: 0;
+    /*Espaçamento superior zerado, fazendo com que o header fique grudado a esquerda*/
+    left: 0;
+    /*Espaçamento a esquerda zerado, fazendo com que o header fique grudado a esquerda*/
+    z-index: 999;
+    /*Eixo de profundidade (Eixo Cartesiano*/
+    box-shadow: 0 0.21rem 0.8rem white;
+    /*Primeiro valor sombra na direita (0)
+Segundo valor sombra bottom (0.21rem)
+Terceiro valor gradiant da sombra (0.5rem*/
+}
+
+
+header img {
+    width: 6em;
+}
+
+
+ol {
+    display: flex;
+    gap: 20px;
+}
+             
+
+li {
+    color: #fff
+}
+
+header button {
+    border-radius: 1rem;
+    width: 7rem;
+    height: 0.3rem;
+    padding: 1.3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#section1 {
+    padding: min(20vh, 6rem);
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#section2 {
+    padding: min(20vh, 6rem);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+
+.img img {
+    width: 30rem;
+    margin: 5rem auto;
+    border-radius: 10px;
+    display: block; /*Garantindo que a imagem se comporte como um bloco*/
+}
+
+.p1{
+    font-size: 1.3em;
+    margin: 1.2em;
+    color: black;
+}
+
+.p2 {
+    font-size: 2em;
+    margin: 1.2em;
+    color: #fff;
+}
+
+
+footer {
+    width: 100%;
+    padding: min(10vh, 4rem);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 6rem;
+}
+
+footer i{
+    font-size: 3rem;
+    gap: 20px;
+}
+
+
+
+@media(max-width: 830px) {
+    header img{
+width: 6rem;
+z-index: 999;
+    }
+
+
+    header buttom{
+        width: 10rem;
+        height: 0.8rem;
+    }
+
+    #section1{
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #section1 img{
+        width: 20rem;
+        margin: 0;
+    }
+
+    p1{
+        font-size: 2rem;
+        line-height: 1.5rem;
+        text-align: left;
+        padding: 2rem;
+        width: 100%;
+        margin: 2rem;
+       
+    }
+    
+     p2{
+        font-size: 2rem;
+        line-height: 1.5rem;
+        text-align: left;
+        padding: 2rem;
+        width: 100%;
+        margin: 2rem;
+    }
+    
+    
+    #section2{
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+    }
+    
+footer img{
+width: 6rem;
+z-index: 999;
+}    
+
+footer i{
+font-size: 3rem;
+
+}
+
+
+}
+
+
+
