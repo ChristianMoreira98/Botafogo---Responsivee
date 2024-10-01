@@ -50,7 +50,7 @@ ol {
     display: flex;
     gap: 20px;
 }
-             
+
 
 li {
     color: #fff
@@ -88,14 +88,21 @@ header button {
     background-color: black;
 }
 
+
+
+
+
+
+
 .img img {
     width: 30rem;
     margin: 5rem auto;
     border-radius: 10px;
-    display: block; /*Garantindo que a imagem se comporte como um bloco*/
+    display: block;
+    /*Garantindo que a imagem se comporte como um bloco*/
 }
 
-.p1{
+.p1 {
     font-size: 1.3em;
     margin: 1.2em;
     color: black;
@@ -108,6 +115,92 @@ header button {
 }
 
 
+
+#section3 {
+    padding: min(20vh, 6rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.divpai{ /*Elemento pai das caixas (3 div´s*/
+    display: flex; /*Tornando ele flex*/
+    justify-content: center; /*Justificando itens ao centro*/
+    align-items: center; /*Alinhando itens ao centro*/
+    text-align: center; /*Alinhando texto ao centro*/
+    z-index: 1; /*Prioridade no eixo z (eixo cartesiano)*/
+    flex-wrap: wrap; /*Habilitando a quebra de linha das caixas caso necessário*/
+    position: relative; /*Posicionamento relativo*/
+}
+
+.filhos{ /* (card) Aqui estamos estilizando nossa caixa onde dentro estão os conteúdos */
+    width: 200px; /*Largura da caixa*/
+    height: 400px;/*Altura da caixa*/
+    margin: 30px; /*Espaçamento geral*/
+    box-shadow:  20px 20px 50px black; /*Sombra da caixa e cor*/
+    border-radius: 14px; /*Arredondamento da borda*/
+    background-color: black; /*Cor de fundo do elemento*/
+}
+
+
+.conteudo{ /*Caixa de conteúdo*/
+    padding: 20px; /*Preenchimento interno do conteúdo*/
+    text-align: center; /*Alinhando o conteúdo ao centro*/
+    transform: translateY(30px); /*Estabelecendo um raio de 50px de espalo no eixo Y*/
+    transition: 0.5s; /*Aplicando uma transição*/
+    opacity: 0.2; /*20% da opacidade*/
+}
+
+
+.conteudo:hover{ /*Hover utilizamos para mudar algo ao passar o mouse*/
+    opacity: 1; /*100% de visibilidade*/
+    transform: translatey(0px); /*Aplicando o retorno do conteúdo ao EixoY em 0*/
+    transition: 0.5s; /*Aplicando uma transição*/
+    cursor: pointer; /*Mudança no cursor*/
+}
+
+
+
+.conteudo h2{ /*Subtítulo da caixa*/
+    position: absolute; /*Posicionamento absoluto em relação ao PAI*/
+    right: 30px; /*Jogando ele 30px a direita*/
+    font-size: 5rem; /*Tamanho da letra*/
+    color: #ffffff67; /*Cor do título*/
+}
+
+.conteudo h3{ /*Subtítulo da caixa*/
+    font-size: 1.8em; /*Tamanho da letra*/
+    color: #fff; /*Cor da letra*/
+    z-index: 1; /*Prioridade no eixo Z*/
+}
+
+
+
+.conteudo p{ /*Parágrafo da caixa*/
+    font-size: 0.8em; /*Tamanho da letra*/
+    color: #fff; /*Cor da letra*/
+    font-weight: 300; /*Peso da fonte*/
+    margin-top: 4rem; /*Espaçamento superior*/
+    }
+
+.conteudo a{ /*Botão Âncorado ma caixa*/
+    padding: 8px 20px; /*Preenchimento eixo x e y*/
+    background: #fff; /*Cor de fundo*/
+    color: black; /*Cor da letra*/
+    text-decoration: none; /*Removendo sublinhado*/
+    border-radius: 15px; /*Arredondamento da borda*/
+    font-weight: 500; /*Peso da fonte*/ 
+    margin-top: 2.7rem; /*Espaçamento superior*/
+    box-shadow:  0 5px 15px black; /*Sombra da caixa*/
+    display: inline-block; /*Comportamento do botão em linha e sempre em bloco*/
+    position: relative; /*Posicionamento relativo*/
+}
+
+
+
 footer {
     width: 100%;
     padding: min(10vh, 4rem);
@@ -117,11 +210,11 @@ footer {
     align-items: center;
 }
 
-footer img{
+footer img {
     width: 6rem;
 }
 
-footer i{
+footer i {
     font-size: 3rem;
     gap: 20px;
 }
@@ -129,18 +222,18 @@ footer i{
 
 
 @media(max-width: 830px) {
-    header img{
-width: 6rem;
-z-index: 999;
+    header img {
+        width: 6rem;
+        z-index: 999;
     }
 
 
-    header buttom{
+    header buttom {
         width: 10rem;
         height: 0.8rem;
     }
 
-    #section1{
+    #section1 {
         padding: 9rem;
         display: flex;
         flex-direction: column;
@@ -149,22 +242,22 @@ z-index: 999;
         align-items: center;
     }
 
-    #section1 img{
+    #section1 img {
         width: 20rem;
         margin: 0;
     }
 
-    p1{
+    p1 {
         font-size: 2rem;
         line-height: 1.5rem;
         text-align: left;
         padding: 2rem;
         width: 100%;
         margin: 2rem;
-       
+
     }
-    
-     p2{
+
+    p2 {
         font-size: 2rem;
         line-height: 1.5rem;
         text-align: left;
@@ -172,9 +265,9 @@ z-index: 999;
         width: 100%;
         margin: 2rem;
     }
-    
-    
-    #section2{
+
+
+    #section2 {
         padding: 9rem;
         display: flex;
         flex-direction: column;
@@ -182,19 +275,18 @@ z-index: 999;
         gap: 15px;
         align-items: center;
     }
-    
-footer img{
-width: 6rem;
-z-index: 999;
-}    
 
-footer i{
-font-size: 3rem;
+
+
+    footer img {
+        width: 6rem;
+        z-index: 999;
+    }
+
+    footer i {
+        font-size: 3rem;
+
+    }
+
 
 }
-
-
-}
-
-
-
