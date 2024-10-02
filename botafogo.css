@@ -126,7 +126,7 @@ header button {
 }
 
 
-.divpai{ /*Elemento pai das caixas (3 div´s*/
+.container{ /*Elemento pai das caixas (3 div´s*/
     display: flex; /*Tornando ele flex*/
     justify-content: center; /*Justificando itens ao centro*/
     align-items: center; /*Alinhando itens ao centro*/
@@ -136,7 +136,7 @@ header button {
     position: relative; /*Posicionamento relativo*/
 }
 
-.filhos{ /* (card) Aqui estamos estilizando nossa caixa onde dentro estão os conteúdos */
+.card{ /* (card) Aqui estamos estilizando nossa caixa onde dentro estão os conteúdos */
     width: 200px; /*Largura da caixa*/
     height: 400px;/*Altura da caixa*/
     margin: 30px; /*Espaçamento geral*/
@@ -146,7 +146,7 @@ header button {
 }
 
 
-.conteudo{ /*Caixa de conteúdo*/
+.content{ /*Caixa de conteúdo*/
     padding: 20px; /*Preenchimento interno do conteúdo*/
     text-align: center; /*Alinhando o conteúdo ao centro*/
     transform: translateY(30px); /*Estabelecendo um raio de 50px de espalo no eixo Y*/
@@ -155,7 +155,8 @@ header button {
 }
 
 
-.conteudo:hover{ /*Hover utilizamos para mudar algo ao passar o mouse*/
+
+.content:hover{ /*Hover utilizamos para mudar algo ao passar o mouse*/
     opacity: 1; /*100% de visibilidade*/
     transform: translatey(0px); /*Aplicando o retorno do conteúdo ao EixoY em 0*/
     transition: 0.5s; /*Aplicando uma transição*/
@@ -164,14 +165,14 @@ header button {
 
 
 
-.conteudo h2{ /*Subtítulo da caixa*/
+.content h2{ /*Subtítulo da caixa*/
     position: absolute; /*Posicionamento absoluto em relação ao PAI*/
     right: 30px; /*Jogando ele 30px a direita*/
     font-size: 5rem; /*Tamanho da letra*/
     color: #ffffff67; /*Cor do título*/
 }
 
-.conteudo h3{ /*Subtítulo da caixa*/
+.content h3{ /*Subtítulo da caixa*/
     font-size: 1.8em; /*Tamanho da letra*/
     color: #fff; /*Cor da letra*/
     z-index: 1; /*Prioridade no eixo Z*/
@@ -179,14 +180,14 @@ header button {
 
 
 
-.conteudo p{ /*Parágrafo da caixa*/
+.content p{ /*Parágrafo da caixa*/
     font-size: 0.8em; /*Tamanho da letra*/
     color: #fff; /*Cor da letra*/
     font-weight: 300; /*Peso da fonte*/
     margin-top: 4rem; /*Espaçamento superior*/
     }
 
-.conteudo a{ /*Botão Âncorado ma caixa*/
+.content a{ /*Botão Âncorado ma caixa*/
     padding: 8px 20px; /*Preenchimento eixo x e y*/
     background: #fff; /*Cor de fundo*/
     color: black; /*Cor da letra*/
